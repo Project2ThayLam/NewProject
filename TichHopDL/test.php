@@ -3,7 +3,7 @@ ini_set('max_execution_time', 300);
 require "simple_html_dom.php";
 $servername = "localhost";
 $username = "root";
-$password = "kangugau";
+$password = "123456";
 $dbname = "project2";
 
 // Create connection
