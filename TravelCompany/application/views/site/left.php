@@ -1,18 +1,25 @@
-<div id="templatemo_content_left">
-		<div class="templatemo_content_left_banner">
-        	<img alt="banner1" src="images/templatemo_banner_1.jpg" />
-            <img alt="banner1" src="images/templatemo_banner_2.jpg" />
+<div id="left">
+            <div id="left_navigation">
+                <img src="images/gtop.gif" alt="" width="191" height="8">
+                <div class="title1">Popular Tours</div>
+                <ul class="contries">
+                    <li><a href="#">Argentina</a></li>
+                    <li><a href="#">Australia</a></li>
+                    <li><a href="#">Brasilia</a></li>
+                    <li><a href="#">China</a></li>
+                    <li><a href="#">France</a></li>
+                    <li><a href="#">England</a></li>
+                    <li><a href="#">Jamaica</a></li>
+                    <li><a href="#">Israel</a></li>
+                    <li><a href="#">Italy</a></li>
+                    <li><a href="#">Germany</a></li>
+                    <li><a href="#">Viet Nam</a> <span class="new">- NEW</span></li>
+                    <li><a href="#">Spain</a></li>
+                    <li><a href="#">Russia</a> <span class="new">- NEW</span></li>
+                    <li><a href="#">Peru</a></li>
+                </ul>
+                <a href="#" class="more">more tours</a>
+                <img src="<?php echo public_url('site/template');?>/images/gbot.gif" alt="" width="191" height="8">
+            </div>
+            <a href="#" class="banner"><img src="<?php echo public_url('site/template');?>/images/banner.jpeg" alt="" width="191" height="346"></a>    
         </div>
-	  <div id="templatemo_content_left_top">
-        <h1>WELCOME TO OUR HOMEPAGE</h1>
-
-        <p>This is a travel website template provided by <a href="#">TemplateMo.com</a>. You may use this layout for your tour and travel related websites.</p>
-
-        <p>Suspendisse vitae neque eget ante tristique vestibulum. Pellentesque dolor nulla, congue vitae, fringilla in, varius a, orci. Mauris convallis. Proin vel libero id erat venenatis accumsan. Nunc blandit orci sit amet risus.</p>
-
-        <p>Quisque in diam a justo <a href="#">condimentum</a> molestie. Vivamus a velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur quis velit quis tortor tincidunt aliquet.<br />
-          <br />
-        Quisque in diam a justo <a href="#">condimentum</a> molestie. Vivamus a velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur quis velit quis tortor tincidunt aliquet.</p>		
-		</div>
-		<div id="templatemo_content_left_bot"></div>
-	</div>

@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<?php $this->load->view("site/head.php");?>
+	<?php 
+	header("Content-type: text/html; charset=utf8");
+	$this->load->view("site/head.php");?>
 </head>
 <body>
-	<div id="templatemo_container">
-			<?php $this->load->view("site/header.php");?>
-		<div id="templatemo_content_section">
-			<?php
+	<?php $this->load->view("site/header.php");?>
+	<div id="wrapper">
+		<?php $this->load->view('site/left.php');?>
+		<?php
 				$this->load->view($temp);
-			?>
-			<?php $this->load->view('site/right.php');?>
-		</div>
-			<?php $this->load->view("site/footer.php");?>
+		?>
+		
 	</div>
+	<?php $this->load->view("site/footer.php");?>
 </body>
 </html>

@@ -42,6 +42,7 @@ class Login extends MY_Controller
 				$input= array('username' => $username); 
 				$info = $this->Customer_Model->get_info_rule($input);
 				$this->session->set_userdata('login', $info->name);
+				$this->session->set_userdata('id_login', $info->user_id);
 
 				redirect(base_url());
 			}

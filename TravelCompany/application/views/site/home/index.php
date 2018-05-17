@@ -1,20 +1,49 @@
-
-
-<div id="templatemo_content_left">
-		<div class="templatemo_content_left_banner">
-        	<img alt="banner1" src="<?php echo public_url('site/template');?>/images/templatemo_banner_1.jpg" />
-            <img alt="banner1" src="<?php echo public_url('site/template');?>/images/templatemo_banner_2.jpg" />
-        </div>
-	  <div id="templatemo_content_left_top">
-        <h1>WELCOME TO OUR HOMEPAGE</h1>
-
-        <p>This is a travel website template provided by <a href="#">TemplateMo.com</a>. You may use this layout for your tour and travel related websites.</p>
-
-        <p>Suspendisse vitae neque eget ante tristique vestibulum. Pellentesque dolor nulla, congue vitae, fringilla in, varius a, orci. Mauris convallis. Proin vel libero id erat venenatis accumsan. Nunc blandit orci sit amet risus.</p>
-
-        <p>Quisque in diam a justo <a href="#">condimentum</a> molestie. Vivamus a velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur quis velit quis tortor tincidunt aliquet.<br />
-          <br />
-        Quisque in diam a justo <a href="#">condimentum</a> molestie. Vivamus a velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur quis velit quis tortor tincidunt aliquet.</p>		
-		</div>
-		<div id="templatemo_content_left_bot"></div>
-	</div>
+<div id="central">                                                                                                                                   
+            <div class="welcome">
+                <p>WELCOME to 
+                    <br>
+                    <span style="margin-left: 50px;">Our Company</span></p>                                         
+            </div>
+            <div class="search">
+                <form action="<?php echo base_url('home/search');?>" method="POST">
+                    <table>
+                        <tr>
+                            <td>Từ ngày <input type="date" name="from-date" required value="<?php echo $this->input->post('from-date');?>"></td>
+                            <td>Đến ngày <input type="date" name="to-date" required value="<?php echo $this->input->post('to-date');?>"></td>
+                            <td><input style="margin-left: 5px;" type="submit" name="search" value="Tìm kiếm"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <?php 
+                if(empty($list)) 
+                {
+                    echo "<p style='color:red;font-size:18px;'>
+                    Không có kết quả theo yêu cầu</p>";
+                } 
+            ?>
+            <?php foreach($list as $row):?>
+            <div class="block">
+                <div class="block-img">
+                    <a href="<?php echo base_url('site/Event?id='.$row->id_sukien);?>"><img src="<?php echo public_url('site/template/img-event/'.$row->link_img);?>" alt="" width="180" height="150"></a>
+                </div>
+                <div class="block-content">
+                    <div class="block-content-title">
+                        <h4><?php echo html_entity_decode($row->ten);?></h4>
+                    </div>
+                    <div class="block-content-address">
+                        <p><?php echo html_entity_decode($row->dia_chi);?></p>
+                    </div>
+                    <div class="block-content-place">
+                        <span class="price"><?php echo html_entity_decode($row->dia_diem);?></span>
+                    <a href="<?php echo base_url('site/event/index?id='.$row->id_sukien);?>" class="more">xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach;?>
+            
+            <div class='pagination'>
+                 <?php echo $this->pagination->create_links();?>
+            </div>
+ </div>
+ <?php $this->load->view('site/right.php');?>

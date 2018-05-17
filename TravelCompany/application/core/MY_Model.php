@@ -156,6 +156,10 @@ class MY_Model extends CI_Model
             $this->db->where($input['where']);
         }
 
+        if ((isset($input['where_in'])) && $input['where_in'])
+        {
+            $this->db->where_in($input['where_in'][0], $input['where_in'][1]);
+        }
 
         //tim du lieu theo ten (like)
         if((isset($input['like'])) && $input['like'] )
@@ -193,7 +197,12 @@ class MY_Model extends CI_Model
         $result = $query->result();
         return $result;
     }
-
+    function get_first_record($key, $value)
+    {
+        $query = $this->db->query("SELECT * FROM ".$this->table." where ".$key."=".$value." ORDER BY ".$key." ASC LIMIT 1");
+        $result = $query->result();
+        return $result;
+    }
      /**
     * Lay tong so
     */
