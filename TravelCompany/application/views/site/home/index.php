@@ -1,8 +1,10 @@
 <div id="central">                                                                                                                                   
             <div class="welcome">
+                <font face="Verdana", color="#009ACD", size="5">
                 <p>WELCOME to 
                     <br>
-                    <span style="margin-left: 50px;">Our Company</span></p>                                         
+                    <span style="margin-left: 50px;">Our Company</span></p>
+                </font>                                         
             </div>
             <div class="search">
                 <form action="<?php echo base_url('home/search');?>" method="POST">
