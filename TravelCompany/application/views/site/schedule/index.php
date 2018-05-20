@@ -60,7 +60,7 @@
 							<a href="<?php echo base_url('site/event/view_map?id_sukien='.$row->id_sukien);?>" title="Tìm nhà hàng, quán ăn xung quanh" target="_blank"><img src="<?php echo public_url('site/template/images/restaurant.png');?>" height="35" width="30"></a>
 						</td>	
 						<td>
-							<a href="<?php echo base_url('site/event/view_map1?id_sukien='.$row->id_sukien);?>" title="Tìm khách sạn xung quanh" target="_blank"><img src="<?php echo public_url('site/template/images/hotel.png');?>" height="35" width="30"></a>
+							<a href="<?php echo base_url('site/event/view_map1?id_sukien='.$row->id_sukien);?>" title="Tìm khách sạn, nhà nghỉ xung quanh" target="_blank"><img src="<?php echo public_url('site/template/images/hotel.png');?>" height="35" width="30"></a>
 						</td>
 						<td>
 							<a href="<?php echo base_url('site/event/view_map2?id_sukien='.$row->id_sukien);?>" title="Tìm quán cafe xung quanh" target="_blank"><img src="<?php echo public_url('site/template/images/cafe.png');?>" height="35" width="30"></a>

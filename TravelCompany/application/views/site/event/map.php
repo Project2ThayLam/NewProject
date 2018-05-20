@@ -6,7 +6,7 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Place search pagination</title>
+    <title>Tìm kiếm nhà hàng, quán ăn</title>
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -122,8 +122,8 @@
 
         for (var i = 0, place; place = places[i]; i++) {
           var image = {
-            url: place.icon,
-            size: new google.maps.Size(20, 20),
+            url: '<?php echo public_url('site/template/images/restaurant1.png');?>',
+            size: new google.maps.Size(25, 30),
             origin: new google.maps.Point(0, 0),
             anchor: new google.maps.Point(17, 34),
             scaledSize: new google.maps.Size(25, 25)
@@ -149,7 +149,7 @@
   <body>
     <div id="map"></div>   
     <div id="right-panel">
-      <!--<form  action="<?php //echo base_url('site/event/view_map'); ?>" method="POST">
+      <!--<form  action="<?php //echo base_url('site/event/view_map?id_sukien='.$row->id_sukien); ?>" method="POST">
         <select name="type">
           <option value="restaurant" selected="selected">Nhà hàng-Quán ăn</option>
           <option value="hotel">Khách sạn</option>

@@ -21,5 +21,5 @@
                 <a href="#" class="more">more tours</a>
                 <img src="<?php echo public_url('site/template');?>/images/gbot.gif" alt="" width="191" height="8">
             </div>
-            <a href="#" class="banner"><img src="<?php echo public_url('site/template');?>/images/banner.jpeg" alt="" width="191" height="346"></a>    
+            <a href="#" class="banner"><img src="<?php echo public_url('site/template');?>/images/banner.jpg" alt="" width="191" height="346"></a>
         </div>

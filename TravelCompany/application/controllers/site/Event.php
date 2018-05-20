@@ -38,6 +38,10 @@ class Event extends MY_Controller
 		$id_sukien= $_GET['id_sukien'];
 		$info= $this->Event_Model->get_info($id_sukien);
 		$this->data['info'] = $info;
+		$type = "restaurant";
+		if($this->input->post('submit')){
+			$type = $this->input->post('type');
+		}
 		$this->load->view('site/event/map',$this->data);
 	}
 	function view_map1()

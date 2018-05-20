@@ -11,7 +11,7 @@
       <div class="right_block">
         <p class="title3">Contest Photos</p>
         <div class="item">
-          <div class="photo"><img src="<?php echo public_url('site/template');?>/images/photo.png" alt="" width="197" height="148"></div>
+          <div class="photo"><img src="<?php echo public_url('site/template');?>/images/photo.jpg" alt="" width="197" height="148"></div>
           <p class="name"><u>Martin Bishop</u> - <strong>The Name Photo</strong></p>
           <a href="#" class="details">more info</a>
         </div>

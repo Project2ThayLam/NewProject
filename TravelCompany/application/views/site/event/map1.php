@@ -6,7 +6,7 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Place search pagination</title>
+    <title>Tìm kiếm khách sạn, nhà nghỉ</title>
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -122,8 +122,8 @@
 
         for (var i = 0, place; place = places[i]; i++) {
           var image = {
-            url: place.icon,
-            size: new google.maps.Size(20, 20),
+            url: '<?php echo public_url('site/template/images/hotel1.png');?>',
+            size: new google.maps.Size(20, 30),
             origin: new google.maps.Point(0, 0),
             anchor: new google.maps.Point(17, 34),
             scaledSize: new google.maps.Size(25, 25)
@@ -158,7 +158,7 @@
         <input type="submit">
       </form>-->
       <h2>Results</h2>
-      <a href=""><ul id="places"></ul></a>
+      <ul id="places"></ul></a>
       <button id="more">More results</button>
     </div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQjNUuorBWOGnqKqweloJ3fzIQl7LgpP4&libraries=places&callback=initMap" async defer></script>
